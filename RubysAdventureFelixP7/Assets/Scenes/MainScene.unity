@@ -223,8 +223,8 @@ Transform:
   m_GameObject: {fileID: 3067074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1867, y: 1.48, z: 0}
-  m_LocalScale: {x: 1.2500732, y: 0.9182949, z: 1}
+  m_LocalPosition: {x: -6.4725, y: 1.3694, z: 0}
+  m_LocalScale: {x: 0.9151786, y: 0.9831266, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -239,6 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305500130}
   - component: {fileID: 305500129}
+  - component: {fileID: 305500131}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -307,12 +308,24 @@ Transform:
   m_GameObject: {fileID: 305500128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -14.98, y: 0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305500131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305500128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef179519f5f208d45a8dfa4d4b406614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1319917627
 GameObject:
   m_ObjectHideFlags: 0
