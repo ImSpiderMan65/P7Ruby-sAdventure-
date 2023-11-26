@@ -23,7 +23,7 @@ public class RubysController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
 
     Projectile projectile;
-    GameObject projectilePrefab;
+    public GameObject projectilePrefab;
     // Start is called before the first frame update
     public void Start()
     {
@@ -63,7 +63,7 @@ public class RubysController : MonoBehaviour
             Launch();
         }
     }
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
         position.x = position.x + 6.0f * horizontal * Time.deltaTime;
