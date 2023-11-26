@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public ParticleSystem Hit;
     Rigidbody2D rigidbody2d;
     // Start is called before the first frame update
     void Awake()
@@ -23,6 +24,7 @@ public class Projectile : MonoBehaviour
     public void Launch(Vector2 direction, float force)
     {
         rigidbody2d.AddForce(direction * force);
+        Hit.Play();
     }
 
     void OnCollisionEnter2D(Collision2D other)

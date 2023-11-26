@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     bool broken = true;
 
     public ParticleSystem smokeEffect;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,7 @@ public class EnemyController : MonoBehaviour
         }
 
         rigidbody2D.MovePosition(position);
+
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -76,7 +78,12 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
+        //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
+
+        smokeEffect.Stop();
+       
+        
     }
 
 }
