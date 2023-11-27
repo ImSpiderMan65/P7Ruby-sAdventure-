@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 210632383021491723}
   - component: {fileID: 4115641061287563107}
   - component: {fileID: 4146400539348766870}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Jambi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.37582514, y: 0.4387098}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.026666667, y: 0.026666667, z: 0.026666667, w: 0.026666667}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.7066667, y: 1.7066667}
     newSize: {x: 1.7066667, y: 1.7066667}
