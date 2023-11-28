@@ -1,5 +1,8 @@
+using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
 
+[DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
 public class EnemyController : MonoBehaviour
 {
     public float speed;
@@ -70,7 +73,7 @@ public class EnemyController : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-5);
+            player.ChangeHealth(-3);
         }
     }
 
@@ -81,8 +84,10 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
-       
-        
     }
 
+    private string GetDebuggerDisplay()
+    {
+        return ToString();
+    }
 }

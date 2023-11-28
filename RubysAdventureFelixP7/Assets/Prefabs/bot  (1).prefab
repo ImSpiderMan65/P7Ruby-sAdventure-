@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.040635347, y: 0}
+  m_Offset: {x: -0.03785114, y: -0.022873044}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1889443, y: 2.56}
+  m_Size: {x: 0.78146183, y: 1.5758479}
   m_EdgeRadius: 0
 --- !u!50 &3481902882494734022
 Rigidbody2D:
@@ -174,9 +174,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  vertical: 1
+  vertical: 0
   changeTime: 4
-  smokeEffect: {fileID: 4179188292707548142}
+  smokeEffect: {fileID: 4458254542307597441, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
 --- !u!95 &1736824811559461983
 Animator:
   serializedVersion: 5
@@ -212,11 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4814053469387351024, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4814053469387351024, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.02
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 4814053469387351024, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
       propertyPath: m_LocalPosition.z
@@ -255,11 +255,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
---- !u!198 &4179188292707548142 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4458254542307597441, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}
-  m_PrefabInstance: {fileID: 297681222120367983}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5111417769746236575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4814053469387351024, guid: be7008aab3043f54bbbd0b7ba186e980, type: 3}

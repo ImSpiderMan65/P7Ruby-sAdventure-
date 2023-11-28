@@ -24,12 +24,14 @@ public class RubysController : MonoBehaviour
 
     Projectile projectile;
     public GameObject projectilePrefab;
+    AudioSource audioSource;
     // Start is called before the first frame update
     public void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        audioSource = GetComponent<AudioSource>();
         
     }
 
@@ -107,5 +109,10 @@ public class RubysController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
