@@ -70,7 +70,7 @@ public class EnemyController : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-2);
+            player.ChangeHealth(-5);
         }
     }
 
@@ -78,7 +78,6 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
-        //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();

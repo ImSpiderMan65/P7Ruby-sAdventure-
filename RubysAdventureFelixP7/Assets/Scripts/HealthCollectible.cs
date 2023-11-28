@@ -10,6 +10,7 @@ public class HealthCollectable : MonoBehaviour
     {
         RubysController controller = other.GetComponent<RubysController>();
         Debug.Log("Object that entered the trigger :" + other);
+        
 
         if (controller != null)
         {
