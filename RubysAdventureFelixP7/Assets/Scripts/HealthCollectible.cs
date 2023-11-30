@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthCollectable : MonoBehaviour
 {
+    
     public AudioClip collectedClip;
     public ParticleSystem sparkles;
     // Start is called before the first frame update
