@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1091196863123869222}
   - component: {fileID: 1651640451331436052}
   - component: {fileID: 5946998337426992297}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: CollectibleHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 00e89d1057578a342b22583144a5ee03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4978068953914406606, guid: 00f9ccf3bca87734ca277753c0f1f822, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4986114715429910949, guid: 00f9ccf3bca87734ca277753c0f1f822, type: 3}
       propertyPath: m_LocalPosition.x

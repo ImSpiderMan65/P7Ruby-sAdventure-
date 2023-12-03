@@ -11,7 +11,6 @@ public class HealthCollectable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         RubysController controller = other.GetComponent<RubysController>();
-        Debug.Log("Object that entered the trigger :" + other);
         
 
         if (controller != null)
@@ -21,6 +20,7 @@ public class HealthCollectable : MonoBehaviour
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
                 sparkles.Stop();
+
                 controller.PlaySound(collectedClip);
 
             }

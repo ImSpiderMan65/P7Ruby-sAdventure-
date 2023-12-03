@@ -24,13 +24,17 @@ public class RubysController : MonoBehaviour
 
     Projectile projectile;
     public GameObject projectilePrefab;
+    public AudioClip throwSound;
+    public AudioClip hitSound;
     AudioSource audioSource;
     // Start is called before the first frame update
     public void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+
         currentHealth = maxHealth;
+
         audioSource = GetComponent<AudioSource>();
         
     }
@@ -94,6 +98,7 @@ public class RubysController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            PlaySound(hitSound);
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
@@ -109,6 +114,7 @@ public class RubysController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+        PlaySound(throwSound);
     }
 
     public void PlaySound(AudioClip clip)
